@@ -22,8 +22,13 @@ class Die
   end
 end
 
+SIX_SIDED_DIE = Die.new(6)
+EIGHT_SIDED_DIE = Die.new(8)
+TEN_SIDED_DIE = Die.new(10)
+TWENTY_SIDED_DIE = Die.new(20)
+
 puts "We're rolling a six sided die!"
-puts Die.new(6).roll
+puts SIX_SIDED_DIE.roll
 
 puts "Now we're rolling two 20 sided die!"
-puts Die.new(20).roll(2)
+puts TWENTY_SIDED_DIE.roll(2)
